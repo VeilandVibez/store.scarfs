@@ -1,5 +1,5 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
+
+
 const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", (e)=>{
@@ -8,6 +8,14 @@ menuBtn.addEventListener("click", (e)=>{
     const isopen = navLinks.classList.contains("open");
     menuBtnIcon.setAttribute("class", isopen ? "ri-close-line" : "re-menu-line")
 });
+  const menuBtn = document.getElementById('menu-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
 
 
 navLinks.addEventListener("click",(e)=>{
